@@ -1,0 +1,127 @@
+/* Global Rules */
+:root {
+    --main-color: #2196f3;
+    --main-color-alt: #1787e0;
+    --main-padding: 100px;
+    --main-trans: 0.3s;
+    --section-background: #ececec;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Cairo", sans-serif;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.container {
+    padding: 0 15px;
+    margin: 0 auto;    
+}
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+/* Global Rules */
+
+/* Start Header */
+nav {
+    box-shadow: 0 5px 20px #ddd;
+    -moz-box-shadow:0 5px 20px #ddd; 
+    -webkit-box-shadow: 0 5px 20px #ddd;
+    -o-box-shadow: 0 5px 20px #ddd;
+}
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+nav .container .logo {
+    display: block;
+    padding: 20px;
+    color: var(--main-color);
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+nav .container .toggel {
+    color: var(--main-color);
+    font-size: 20px;
+}
+nav .container .mega-menu {
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    top: calc(100%);
+    width: 100%;
+    border-bottom: 2px solid var(--main-color);
+    box-shadow: 10px 10px 10px #ddd;
+    opacity: 1;
+    transition: var(--main-trans);
+    z-index: -1;
+}
+nav .container .mega-menu img {
+    width: 400px;
+}
+@media (max-width: 767px) {
+    nav .container .mega-menu img {
+        display: none;
+    }
+    nav .container .mega-menu {
+        text-align: center;
+    }
+}
+nav .container .mega-menu ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20px;
+    width: 100%;
+}
+nav .container .mega-menu ul li a {
+    display: block;
+    color: var(--main-color);
+    background-color: white;
+    padding: 10px 20px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+/* End Header */
+
+
+
+
+
+
+
+
