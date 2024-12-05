@@ -53,6 +53,8 @@ ul {
 
 /* Start Header */
 nav {
+    position: relative;
+    background-color: white;
     box-shadow: 0 5px 20px #ddd;
     -moz-box-shadow:0 5px 20px #ddd; 
     -webkit-box-shadow: 0 5px 20px #ddd;
@@ -60,23 +62,71 @@ nav {
 }
 nav .container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     position: relative;
 }
 nav .container .logo {
-    display: block;
-    padding: 20px;
     color: var(--main-color);
-    font-size: 22px;
+    font-size: 26px;
     font-weight: bold;
     text-transform: capitalize;
+    height: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-nav .container .toggel {
+@media (max-width: 767px) {
+    nav .container .logo {
+        width: 100%;
+    }
+}
+nav .container ul {
+    display: flex;
+}
+@media (max-width: 767px) {
+    nav .container ul {
+        margin: auto;
+    }
+}
+nav .container ul > li > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 72px;
+    position: relative;
+    color: black;
+    padding: 0 30px;
+    text-transform: capitalize;
+    font-size: 16px;
+    transition: var(--main-trans);
+}
+@media (max-width: 767px) {
+    nav .container ul > li > a {
+        height: 40px;
+        padding: 10px;
+        font-size: 15px;
+    }
+}
+nav .container ul > li > a:hover {
     color: var(--main-color);
-    font-size: 20px;
+    background-color: #fafafa;
 }
-nav .container .mega-menu {
+nav .container ul > li > a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 4px;
+    background-color: var(--main-color);
+    transition: var(--main-trans);
+}
+nav .container ul > li > a:hover::before {
+    width: 100%;
+}
+/* nav .container .mega-menu {
     position: absolute;
     left: 0;
     display: flex;
@@ -115,7 +165,7 @@ nav .container .mega-menu ul li a {
     padding: 10px 20px;
     text-transform: capitalize;
     font-weight: bold;
-}
+} */
 /* End Header */
 
 
