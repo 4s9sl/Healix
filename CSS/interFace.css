@@ -248,7 +248,60 @@ nav .container ul  li:last-child .mega-menu .links > li > a > i {
 }
 /* End Header */
 
-
+/* Start Landing */
+.landing {
+    position: relative;
+}
+.landing .container {
+    background-image: url(../images/chuttersnap-BT-gRLT3I9c-unsplash.jpg);
+    width: 100%;
+    height: 300px;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-top: 80px ;
+}
+.landing .container::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.400);
+}
+.landing .container .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    backdrop-filter: blur(3px);
+    width: fit-content;
+    padding: 30px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 20px;
+    transform: translate(-50% , -50%);
+}
+.landing .container .content h1 {
+    color:  white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 35px;
+}
+.landing .container .content p {
+    text-transform: capitalize;
+    color: white;
+    font-size: 20px;
+    line-height: 1.8;
+    text-align: center;
+}
+.landing .container i {
+    color: var(--main-color);
+    font-weight: 700;
+}
+/* End Landing */
 
 
 
