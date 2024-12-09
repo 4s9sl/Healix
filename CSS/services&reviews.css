@@ -2,7 +2,7 @@
     border: 2px solid black;
     border-radius: 10px;
     padding: 5px 15px;
-    margin: 0 auto 50px;
+    margin: 0px auto 50px;
     font-size: 30px;
     text-transform: uppercase;
     width: fit-content;
@@ -254,3 +254,63 @@
     z-index: -2;
 }
 /* End Services */
+
+/* start reviews */
+.reviews{
+    background-color: #e7e5e5;
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding) ;
+    position: relative;
+}
+.reviews .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(300px , 1fr));
+    gap: 30px;
+}
+.reviews .rev-box{
+   border: 2px solid transparent;
+   background-color: white;
+   padding: 20px;
+   box-shadow: 0 2px 4px hsla(0, 0%, 0%, 0.225);
+   position: relative;
+}
+.reviews .rev-box .image img {
+   position: absolute;
+   right: -10px;
+   top: -35px;
+   width: 100px;
+   height: 100px;
+   border: 6px solid  #d6d5d5;
+   border-radius: 50%;
+}
+.reviews .rev-box h2{
+    text-transform: capitalize;
+    padding: 3px 0px;
+    /* font-weight: normal; */
+}
+.reviews .rev-box p{
+    color: #696969;
+    text-transform: capitalize;
+    line-height: 25px;
+    padding: 7px 0px;
+}
+.reviews .rev-box .icons{
+    color:gold;
+}
+/* end reviews*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* end reviews */
