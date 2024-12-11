@@ -372,22 +372,26 @@ nav .container ul  li:last-child .mega-menu .links > li > a > i {
     }
 }
 .landing  .go-down {
-    display: block;
+    /* display: block;
     width: fit-content;  
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     bottom: 100px;
     color: var(--main-color);
-    /* background-color: transparent;
-    backdrop-filter: blur(5px);
-    border-radius: 0 20px 0 20px; 
-    padding: 10px;*/
     transition: var(--main-trans);
-    z-index: 9999;
+    z-index: 9999; */
+    display: block;
+    width: fit-content;
+    color: var(--main-color);
+    text-shadow: 0px 5px 5px white;
+    position: absolute;
+    left: 50%;
+    bottom: 100px;
+    transform: translateX(-50%);
+    animation: bouncing 1.5s 1.5s infinite;
 }
 .landing .container .go-down i {
-    animation: bouncing 1.5s 1.5s infinite;
     /* animation-name: bouncing;
     animation-duration: 1.5s;
     animation-delay: 1.5s;
@@ -431,10 +435,10 @@ nav .container ul  li:last-child .mega-menu .links > li > a > i {
     50%,
     80%,
     100% {
-        transform: translateY(0);
+        bottom: 100px;
     }
     40%, 60% {
-        transform: translateY(-15px);
+        bottom: 115px;
     }
 }
 @keyframes bouncing-logo {

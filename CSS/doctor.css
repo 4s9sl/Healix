@@ -1,11 +1,36 @@
-html{
-    scroll-behavior: smooth;
+/* Global Rules */
+:root {
+    --main-color: #2196f3;
+    --main-color-alt: #1787e0;
+    --main-padding: 100px;
+    --main-trans: 0.3s;
+    --section-background: #ececec;
 }
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Cairo", sans-serif;
+}
+::-webkit-scrollbar {
+    width: 12px; 
+}
+::-webkit-scrollbar-track {
+    background: #ccc; 
+    border-radius: 6px; 
+}
+::-webkit-scrollbar-thumb {
+    background: var(--main-color); 
+    border-radius: 6px; 
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--main-color-alt); 
+}   
 .container{
     padding-left: 15px;
     padding-right: 15px;
@@ -28,7 +53,6 @@ html{
         width: 1270px;
     }
 }
-/* ////////////////////////////////////////////////////////////////////////////////// */
 .main-title{
     border: 2px solid black;
     border-radius: 10px;
@@ -115,10 +139,12 @@ html{
         border-radius: 10px;
     }
 }
-/*doctors /////////////////////////////////////////////////////////// */
+/* Global Rules */
+
+/* Start Doctor */
 .doctor{
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
     position: relative;
 }
 .doctor .container{
@@ -126,10 +152,10 @@ html{
     grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
     gap: 30px;
 }
-.doctor .doc-box{
+.doctor .container .doc-box{
     position: relative; 
 }
-.doctor .doc-box:before{
+.doctor .container .doc-box:before{
     content: "";
     background-color: #f3f3f3;
     position: absolute;
@@ -137,7 +163,7 @@ html{
     top: 0;
     height: 100%;
     border-radius: 10px;
-    transition: 0.3s;
+    transition: var(--main-trans);
 }
 .doctor .doc-box:after{
     content: "";
@@ -147,7 +173,7 @@ html{
     top: 0;
     height: 100%;
     border-radius: 10px;
-    transition: 0.3s;
+    transition: var(--main-trans);
 }
 .doctor .doc-box:before{
     width: calc(100% - 60px);
@@ -168,7 +194,8 @@ html{
 }
 .doctor .doc-box .doc-data img{
     width: calc(100% - 60px);
-    transition: 0.3s;
+    height: calc(200px);
+    transition: var(--main-trans);
     border-radius: 10px;
 }
 .doctor .doc-box:hover img{
@@ -189,34 +216,45 @@ html{
     text-decoration: none;
 }
 .doctor .doc-box .doc-data .social-i a:hover i{
-    color: rgb(80, 163, 241);
+    color: var(--main-color);
 }
 .doctor .doc-box .doc-data .social-i i{
     color: #777;
-    transition: 0.3s;
+    transition: var(--main-trans);
 }
 .doctor .doc-box .doc-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding-left: 70px;
 }
 .doctor .doc-box .doc-info h3{
     margin-top: 15px;
-    margin-bottom: 0;
-    color: rgb(80, 163, 241);
+    margin-bottom: 15px;
+    color: var(--main-color);
     font-size: 18px;
-    transition: 0.3s;
+    text-transform: capitalize;
+    transition: var(--main-trans);
 }
-.doctor .doc-box .doc-info p{
-    padding-left: 25px;
+.doctor .doc-box .doc-info h3 span{
+    color: #777;
+    text-transform: capitalize;
+    font-size: 15px;
+}
+.doctor .doc-box .doc-info a {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
 }
 .doctor .doc-box .doc-info button{  
     width: 100px;
     height: 25px;
-    background-color:rgb(80, 163, 241);
+    background-color: var(--main-color);
     color: #e6e6e7;
-    border: rgb(80, 163, 241);
+    border: var(--main-color);
     border-radius: 5px;
     text-transform: capitalize;
-    transition: 0.3s;
+    transition: var(--main-trans);
     cursor: pointer;
 }
 .doctor .doc-box:hover .doc-info h3{
@@ -225,3 +263,7 @@ html{
 .doctor .doc-box:hover .doc-info button{
     background-color: #777;
 }
+.doctor .doc-box:hover .doc-info button:hover {
+    background-color: var(--main-color);
+}
+/* End Doctor */
