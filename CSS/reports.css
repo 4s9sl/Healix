@@ -1,4 +1,14 @@
-*{
+:root {
+    --main-color: #2196f3;
+    --main-color-alt: #1787e0;
+    --main-padding: 100px;
+    --main-trans: 0.3s;
+    --section-background: #ececec;
+}
+*{  
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -144,11 +154,15 @@ body {
     gap: 30px;
 }
 .analysis .box{
-    height: 400px;
     box-shadow: 0 2px 15px rgb( 0 0 0/ 10%);
     border-radius: 6px;
     overflow: hidden;
     transition: transform 0.5s,box-shadow 0.5s;
+}
+.analysis .box .info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .analysis .box:hover{
     transform: translatey(-10px);
@@ -162,11 +176,14 @@ body {
     padding: 20px;
 }
 .analysis .box .content h3{
+    text-transform: uppercase;
     margin: 0;
 }
 .analysis .box .content p{
     margin: 10px 0 0;
-    color:#777;
+    line-height: 22px;
+    text-transform: capitalize;
+    color:#9c9c9c;
 }
 .analysis .box .content .price{
     color: black;
@@ -188,6 +205,7 @@ body {
     border-radius: 5px;
     text-transform: capitalize;
     cursor: pointer;
+    transition: var(--main-trans);
 }
 .analysis .box .info  a{
     text-decoration: none;
