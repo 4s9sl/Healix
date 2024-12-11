@@ -1,8 +1,11 @@
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Cairo", sans-serif;
     margin: 0;
     padding: 0;
+}
+.main {
+    height: 100vh;
     background-image: url(/images/toni-pomar-61EZzDtcGnY-unsplash.jpg);
     background-size: cover;
     background-position: center;
@@ -10,13 +13,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
 .container {
     text-align: center;
     padding: 20px 40px;
     border-radius: 10px;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 .container h1 {
