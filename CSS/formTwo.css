@@ -6,7 +6,7 @@ body {
 }
 .main {
     height: 100vh;
-    background-image: url(/images/toni-pomar-61EZzDtcGnY-unsplash.jpg);
+    background: linear-gradient(15deg, hsla(0, 0%, 0%, 0.753), #00103b);
     background-size: cover;
     background-position: center;
     color: white;
@@ -18,7 +18,7 @@ body {
     text-align: center;
     padding: 20px 40px;
     border-radius: 10px;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(50px);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 .container h1 {

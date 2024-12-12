@@ -541,9 +541,15 @@ nav .container ul  li:last-child .mega-menu .links > li > a > i {
     text-align: center;
     color: white;
     border-top: 1px solid #444;
+    text-transform: capitalize;
+    letter-spacing: 1.5px;
+}
+.footer .copyright span{
+    font-weight: bold;
+    color: var(--main-color);
+    font-size: 25px;
 }
 /* End Footer */
-
 
 /* Animaitons */
 @keyframes bouncing {
