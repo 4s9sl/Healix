@@ -411,6 +411,124 @@ nav .container ul  li:last-child .mega-menu .links > li > a > i {
 }
 /* End scroll-to-top */
 
+
+/* Start Footer */
+.footer {
+    background-color: #191919;
+    padding-top: 60px;
+}
+.footer .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(300px , 1fr));
+    gap: 30px;
+
+}
+.footer .container .box h3 {   
+    font-size: 50px;
+    color: white;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+@media (max-width: 767px) {
+    .footer .container .box h3 {   
+        text-align: center;
+    }
+}
+.footer .container .box .social {
+    display: flex;
+    margin-bottom: 30px;
+}
+@media (max-width: 767px) {
+    .footer .container .box .social {   
+        justify-content: center;
+        align-items: center;
+    }
+}
+.footer .container .box .social li a {
+    display: block;
+    color: #b9b9b9;
+    background-color: #313131;
+    margin-right: 20px;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    transition: var(--main-trans);
+}
+.footer .container .box .social li .face:hover{
+    background-color: #1877f2;
+}
+.footer .container .box .social li .tw:hover{
+    background-color: #1da1f2;
+}
+.footer .container .box .social li .ins:hover{
+    background-color: #bd1efc;
+}
+.footer .container .box .social li a i {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 20px;
+    transform: translate(-50% , -50%);
+}
+.footer .container .box p {
+    color: #b9b9b9;
+    line-height: 1.8;
+    text-transform: capitalize;
+}
+.footer .container .box .links {
+    display: flex;
+    flex-direction: column;
+    
+}
+.footer .container .box .links li:not(:last-child) {
+    border-bottom: 1px solid grey;
+}
+.footer .container .box .links li a {
+    display: block;
+    color: #b9b9b9;
+    text-transform: capitalize;
+    position: relative;
+    padding: 15px 0;
+    transition: var(--main-trans);
+}
+.footer .container .box .links li a:hover {
+    margin-left: 10px;
+    color: white;
+}
+.footer .container .box .links li a::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\F101";
+    font-weight: 900;
+    margin-right: 10px;
+    color: var(--main-color);
+}
+.footer .container .box .line {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    line-height: 1.8;
+}
+.footer .container .box .line i {
+    color: var(--main-color);
+    margin-right: 20px;
+    font-size: 25px;
+}
+.footer .container .box .line .info {
+    color: #b9b9b9;
+    font-size: 20px;
+}
+.footer .container .box .line .info span {
+    display: block;
+}
+.footer .copyright {
+    padding: 25px 0;
+    text-align: center;
+    color: white;
+    border-top: 1px solid #444;
+}
+/* End Footer */
+
+
 /* Animaitons */
 @keyframes bouncing {
     0%,
