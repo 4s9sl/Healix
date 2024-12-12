@@ -110,6 +110,36 @@
     position: relative;
     z-index: 1;
   }
+  .discount .image .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  @media (max-width: 767px) {
+    .discount .image .content img {
+      display: none;
+    }
+  }
+  .discount .image .content a {
+    display: block;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: -2px 5px 3px rgba(0, 0, 0, 0.540) , 2px -5px 3px rgba(0, 0, 0, 0.540) ;
+    border-radius: 10px;
+    transition: var(--main-transition);
+  }
+  @media (max-width: 767px) {
+    .discount .image .content a {
+      margin-top: 20px;
+      margin-bottom: 0px; 
+    }
+  }
+  .discount .image .content a:hover {
+    background-color: #1462a1;
+  }
   .discount .image::before {
     content: "";
     position: absolute;
