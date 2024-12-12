@@ -423,17 +423,33 @@ nav .container ul  li:last-child .mega-menu .links > li > a > i {
     gap: 30px;
 
 }
-.footer .container .box h3 {   
+.footer .container .box .logos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+}
+@media (max-width: 767px) {
+    .footer .container .box .logos {
+        width: 100%;
+    }
+}
+.footer .container .box .logos > img {
+    width: 60px;
+    height: 60px;
+}
+.footer .container .box .logos h3 {   
     font-size: 50px;
     color: white;
     margin-bottom: 30px;
     text-transform: capitalize;
 }
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
     .footer .container .box h3 {   
         text-align: center;
     }
-}
+} */
 .footer .container .box .social {
     display: flex;
     margin-bottom: 30px;
