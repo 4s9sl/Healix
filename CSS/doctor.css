@@ -53,7 +53,7 @@ body {
         width: 1270px;
     }
 }
-.main-title{
+.maintitle{
     border: 2px solid black;
     border-radius: 10px;
     padding: 5px 15px;
@@ -65,7 +65,7 @@ body {
     z-index: 3;
     transition: 0.3s;
 }
-.main-title:after{
+.maintitle:after{
     content: "";
     position: absolute;
     width: 10px;
@@ -77,7 +77,7 @@ body {
     right: -20px;
     visibility: hidden;
 }
-.main-title:before{
+.maintitle:before{
     content: "";
     position: absolute;
     width: 10px;
@@ -89,7 +89,7 @@ body {
     left: -20px;
     visibility: hidden;
 }
-.main-title:hover::before{
+.maintitle:hover::before{
     z-index: -1;
     animation-name: left;
     animation-duration: 0.3s;
@@ -97,7 +97,7 @@ body {
     animation-fill-mode: forwards;
     visibility: visible;
 }
-.main-title:hover::after{
+.maintitle:hover::after{
     z-index: -1;
     animation-name: right;
     animation-duration: 0.3s;
@@ -105,7 +105,7 @@ body {
     animation-fill-mode: forwards;
     visibility: visible;
 }
-.main-title:hover{
+.maintitle:hover{
     color: white;
     border: 2px solid white;
     transition: 0.5s;
@@ -237,9 +237,9 @@ body {
     transition: var(--main-trans);
 }
 .doctor .doc-box .doc-info h3 span{
-    color: #777;
+    color: black;
     text-transform: capitalize;
-    font-size: 15px;
+    font-size: 25px;
 }
 .doctor .doc-box .doc-info a {
     display: block;
