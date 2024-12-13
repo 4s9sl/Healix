@@ -147,15 +147,16 @@
     opacity: 0.3;
 }
 .services .serv-box h2{
+    color: blue;
     width: fit-content;
-    font-size: 30px;
+    font-size: 10px;
     margin: auto;
     padding: 18px;
     text-transform: capitalize;
 }
 .services .serv-box .line{
     width: 60px;
-    height: 4px;
+    height: 2px;
     border-radius: 3px;
     margin: auto;
 }
@@ -284,12 +285,14 @@
     border-radius: 50%;
 }
 .reviews .rev-box h2{
+    color: #777;
+    font-size: 10px;
     text-transform: capitalize;
     padding: 3px 0px;
     /* font-weight: normal; */
 }
 .reviews .rev-box p{
-    color: #777;
+    color:#777;
     text-transform: capitalize;
     line-height: 25px;
     padding: 7px 0px;

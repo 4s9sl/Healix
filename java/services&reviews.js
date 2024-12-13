@@ -1,0 +1,25 @@
+document.querySelector(".titleBOX1").style.color = 'black'
+document.querySelector(".titleBOX2").style.color = 'black'
+document.querySelector(".titleBOX3").style.color = 'black'
+
+document.querySelector(".titleBOX1").style.fontSize = '30px'
+document.querySelector(".titleBOX2").style.fontSize = '30px'
+document.querySelector(".titleBOX3").style.fontSize = '30px'
+
+document.querySelector(".oper-line").style.height = '4px'
+document.querySelector(".exam-line").style.height = '4px'
+document.querySelector(".con-line").style.height = '4px'
+
+document.querySelector(".rev-title1").style.color = 'black'
+document.querySelector(".rev-title2").style.color = 'black'
+document.querySelector(".rev-title3").style.color = 'black'
+document.querySelector(".rev-title4").style.color = 'black'
+document.querySelector(".rev-title5").style.color = 'black'
+document.querySelector(".rev-title6").style.color = 'black'
+
+document.querySelector(".rev-title1").style.fontSize = '25px'
+document.querySelector(".rev-title2").style.fontSize = '25px'
+document.querySelector(".rev-title3").style.fontSize = '25px'
+document.querySelector(".rev-title4").style.fontSize = '25px'
+document.querySelector(".rev-title5").style.fontSize = '25px'
+document.querySelector(".rev-title6").style.fontSize = '25px'
